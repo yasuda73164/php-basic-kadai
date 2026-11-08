@@ -20,13 +20,18 @@
                 $this->name = $name;
                 $this->price = $price;
             }
+            public function show_price() {
+                echo $this->price;
+            }
         }
 
         // インスタンス化する
-        $Food = new Food('Poteto', 250);
+        $food = new Food('Poteto', 250);
 
         // インスタンス$Foodのプロパティの値を出力する
-        print_r($Food);
+        print_r($food);
+
+        $food->show_price();
     
     // クラスを定義する
         class Animal {
@@ -41,13 +46,19 @@
                 $this->height = $height;
                 $this->weight = $weight; 
             }
+
+            public function show_height() {
+                echo $this->height;
+            }
         }
 
         // インスタンス化する
-        $Animal = new Animal('dog', 60, 5000);
+        $animal = new Animal('dog', 60, 5000);
 
         // インスタンス$Foodのプロパティの値を出力する
-        print_r($Animal);
+        print_r($animal);
+
+        $animal->show_height();
     ?>
     </p>
 </body>
